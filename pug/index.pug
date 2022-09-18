@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Frontend Mentor | NFT preview card component
+    link(rel="stylesheet", href="./css/style.css")
+  body
+    .card
+      .card__imgCard
+        .imgCard__bg
+      h1.card__title Equilibrium #3429
+      p.card__information Our Equilibrium collection promotes balance and calm.
+
+      .card__informationCard
+        span.informationCard__cryptoMoney
+          img.cryptoMoney__icon(src="./images/icon-ethereum.svg", alt="icon ethereum")
+          |  0.041 ETH
+        span.informationCard__time
+          img.cryptoMoney__icon(src="./images/icon-clock.svg", alt="icon clock")
+          |  3 days left
+
+      .card__creator
+        .creator__img
+          img.img__creator(src="./images/image-avatar.png", alt="images avatar")
+        p.creator__attribution  Creation of
+          span.creator__name  Jules Wyvern
+
+    .attribution Challenge by
+      a(href="https://www.frontendmentor.io?ref=challenge", target="_blank", rel="noopener noreferrer") Frontend Mentor
+      |   Coded by
+      a(href="https://", target="_blank", rel="noopener noreferrer")  Camilo Torres.
+
+

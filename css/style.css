@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+.card .card__imgCard:hover .imgCard__bg:hover::before, .card .card__imgCard:hover .imgCard__bg:hover::after {
+  content: "";
+  width: 98%;
+  height: 135%;
+  display: block;
+  border-radius: 45%;
+  position: absolute;
+  bottom: -60px;
+  mix-blend-mode: color; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif; }
+
+body {
+  min-height: 100vh;
+  padding: 20px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0d192b;
+  position: relative; }
+
+.card {
+  background: #14253d;
+  padding: 20px;
+  border-radius: 20px;
+  width: 350px; }
+  .card .card__imgCard {
+    display: block;
+    width: 100%;
+    height: 310px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url("../images/image-equilibrium.jpg");
+    background-position: center;
+    background-size: contain cover;
+    background-repeat: no-repeat;
+    transition: 1s; }
+    .card .card__imgCard .imgCard__img {
+      width: 100%;
+      height: 100%;
+      z-index: -1; }
+    .card .card__imgCard:hover {
+      background-image: url("../images/icon-view.svg"), url("../images/image-equilibrium.jpg"); }
+      .card .card__imgCard:hover .imgCard__bg {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 255, 247, 0);
+        mix-blend-mode: hard-light;
+        position: relative;
+        overflow: hidden; }
+        .card .card__imgCard:hover .imgCard__bg:hover {
+          background: rgba(0, 255, 247, 0.55); }
+          .card .card__imgCard:hover .imgCard__bg:hover::before {
+            background: black;
+            left: -100px;
+            animation: wather 5s linear alternate forwards; }
+          .card .card__imgCard:hover .imgCard__bg:hover::after {
+            background: black;
+            right: -100px;
+            animation: wather 5s linear alternate forwards; }
+@keyframes wather {
+  from {
+    bottom: -50px; }
+  to {
+    transform: rotate(1turn);
+    bottom: 100%; } }
+  .card .card__title {
+    color: white;
+    margin: 20px 0 10px;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 1s; }
+    .card .card__title:hover {
+      color: #00fff7; }
+  .card .card__information {
+    font-size: 18px;
+    color: #8bacda;
+    margin: 20px 0;
+    font-weight: 300; }
+  .card .card__informationCard {
+    display: flex;
+    justify-content: space-between; }
+    .card .card__informationCard .informationCard__cryptoMoney {
+      color: #00fff7;
+      display: flex;
+      align-items: center; }
+      .card .card__informationCard .informationCard__cryptoMoney .cryptoMoney__icon {
+        margin-inline-end: 10px; }
+    .card .card__informationCard .informationCard__time {
+      color: #8bacda;
+      display: flex;
+      align-items: center; }
+      .card .card__informationCard .informationCard__time .cryptoMoney__icon {
+        margin-inline-end: 10px; }
+  .card .card__creator {
+    border-top: 2px solid #2f415b;
+    display: flex;
+    align-items: center;
+    padding: 20px 0 10px;
+    margin-block-start: 20px; }
+    .card .card__creator .creator__img {
+      width: 35px;
+      height: 35px;
+      padding: 1px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-inline-end: 20px; }
+      .card .card__creator .creator__img .img__creator {
+        width: 100%;
+        height: 100%; }
+    .card .card__creator .creator__attribution {
+      color: #8bacda;
+      font-weight: 300; }
+      .card .card__creator .creator__attribution .creator__name {
+        color: white;
+        transition: 1s; }
+        .card .card__creator .creator__attribution .creator__name:hover {
+          color: #00fff7; }
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  color: white; }
+  .attribution a {
+    color: #00fff7;
+    text-decoration: none;
+    margin-inline: 10px; }
+
+/*# sourceMappingURL=style.css.map */
