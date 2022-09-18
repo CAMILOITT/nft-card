@@ -40,10 +40,6 @@ body {
     background-size: contain cover;
     background-repeat: no-repeat;
     transition: 1s; }
-    .card .card__imgCard .imgCard__img {
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
     .card .card__imgCard:hover {
       background-image: url("../images/icon-view.svg"), url("../images/image-equilibrium.jpg"); }
       .card .card__imgCard:hover .imgCard__bg {
